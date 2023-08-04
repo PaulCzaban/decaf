@@ -109,7 +109,6 @@ venv.bak/
 tr.txt
 *.png
 *.pyc
-*.pak
 *.caf
 *.xcf
 .vscode
