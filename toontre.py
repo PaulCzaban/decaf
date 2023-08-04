@@ -113,11 +113,11 @@ if __name__ == '__main__':
 
         # print output
         for off, meta, line in zip(voices, metas, texts):
-            print '{:04x}'.format(off) + '\t' + binascii.hexlify(meta) + '\t' + line
+            print ('{:04x}'.format(off) + '\t' + binascii.hexlify(meta) + '\t' + line)
 
     elif action == '-t':
         extract_txt(filename)
 
 
     else:
-        print 'Unknown action.'
+        print ('Unknown action.')

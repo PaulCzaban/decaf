@@ -27,12 +27,10 @@ def extract_pak(filename):
 
             names.append(name)
 
-        # pakFile.seek(offsets[0])
-
         dirname = filename[:-4]
         create_directory(dirname)
         i = 0
-        with open(dirname + '/' + dirname + '.IDX', 'w') as idxFile:
+        with open(dirname + '/' + names[0][:-4] + '.IDX', 'w') as idxFile:
             idxFile.writelines('\n'.join(names) + '\n')
 
         for off, name in zip(offsets, names):

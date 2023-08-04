@@ -59,7 +59,7 @@ def mkcaf(name):
 
     numFrames = height / h
 
-    print h, numFrames
+    print (h, numFrames)
     x1 = 0
     x2 = width - 1
     y1 = 0
@@ -177,7 +177,7 @@ def decaf(name):
             _y1 = struct.unpack('<I', data[20:24])[0]
             _x2 = struct.unpack('<I', data[24:28])[0]
             _y2 = struct.unpack('<I', data[28:32])[0]
-            print _x1, _y1, _x2, _y2, oldRef
+            print (_x1, _y1, _x2, _y2, oldRef)
 
             if oldRef != -1 or decompressedSize == 0:
                 # print decompressedSize == 0
